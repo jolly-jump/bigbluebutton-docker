@@ -58,13 +58,18 @@ services:
       - bigbluebutton:/var/bigbluebutton
       - html5-static:/html5-static:ro
       - ${DEFAULT_PRESENTATION:-/dev/null}:/etc/nginx/html/default.pdf
-    network_mode: host
+    #network_mode: host
     extra_hosts:
       - "host.docker.internal:10.7.7.1"
       - "core:10.7.7.2"
       - "etherpad:10.7.7.4"
       - "webrtc-sfu:10.7.7.10"
       - "html5:10.7.7.11"
+    networks:
+      bbb-net:
+        ipv4_address: 10.7.7.20
+    ports:
+      - "10.7.7.1:8080:8080"
 
   etherpad:
     build: mod/etherpad
