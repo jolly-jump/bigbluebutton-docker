@@ -1,6 +1,12 @@
-# BigBlueButton Docker
+# BigBlueButton 2.2 Docker
 
 [Changelog](CHANGELOG.md) | [Issues](https://github.com/alangecker/bigbluebutton-docker/issues)
+
+## About the upcoming BigBlueButton 2.3
+the `v2.3.x` branch became now `develop` at the official [bigbluebutton/docker](https://github.com/bigbluebutton/docker) repository :tada:
+- If you want to support the development, check out that repo! :)
+- If you want a stable release, stay here!
+
 
 ## Features
 - Easy installation
